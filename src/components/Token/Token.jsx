@@ -11,7 +11,7 @@ function Token({ item }) {
         navigate("/tokens/" + coin);
       }}
       key={coin}
-      className="border p-3 border-gray-500 m-3"
+      className="border p-3 border-gray-500 m-3 my-item"
       style={{
         boxShadow: "1px 3px 1px 3px rgb(0 0 0 / 20%)",
         cursor: "pointer",
@@ -24,7 +24,7 @@ function Token({ item }) {
         <span style={{ float: "right" }}>{open}</span>
       </div>
       <span style={{ whiteSpace: "pre" }}>
-        open:{open} high:{high} low:{low}
+        high:{high} low:{low}
       </span>
       <span style={{ float: "right" }}>
         {changePrice >= 0 && "+"}

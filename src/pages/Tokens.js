@@ -3,7 +3,7 @@ import { useOutletContext } from "react-router-dom";
 import Token from "../components/Token/Token";
 function Tokens() {
   const tokenList = [
-    { network: "TON", coin: "DOGS", open: 23, high: 24, low: 20, last: 21,tag:"NA" },
+    { network: "TON", coin: "DOGS", open: 0.000913, high: 0.000940, low: 0.000906, last: 0.000948,tag:"NA" },
     { network: "TON", coin: "$X", open: 23, high: 24, low: 20, last: 21,tag:"NA" },
     { network: "TON", coin: "TON", open: 23, high: 24, low: 20, last: 21,tag:"NA" },
     { network: "TON", coin: "NOT", open: 23, high: 24, low: 20, last: 21,tag:"NA" },

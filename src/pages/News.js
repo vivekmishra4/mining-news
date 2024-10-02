@@ -4,9 +4,9 @@ import Card from "../components/Card/Card";
 function News() {
   const newsList = [
     {
-      title: "Drops Lab",
-      description: "Join this for codes",
-      url: "https://www.google.com",
+      title: "Cats Snapshot",
+      description: "Cats snapshot postponed to 3rd october",
+      url: "https://t.me/Cats_housewtf/147",
     },
     {
       title: "Hamster kombat",

@@ -1,17 +1,22 @@
 .footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    background-color: black;
 }
-/* .footer-item{
-    width: 10%;
+.footer-item{
+    min-width: 20vw;
+    padding:auto 5%;
+    box-sizing: border-box;
+    border-right: 2px red solid;
+    height: 100%;
     
-} */
-
-.footer-item:hover{
-    scale: 0.95;
-    background-color: rgb(227, 241, 242);
+}
+.footer-item:last-child{
+    border-right: none;
 }
 .footer-item.selected{
-    scale: 1.3;
-    background-color:inherit ;
+    background-color: rgb(46, 43, 43);
 }

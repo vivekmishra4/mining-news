@@ -7,60 +7,40 @@ function Channels() {
   setCurrentPage("Channels");
   const channelList = [
     {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
+      title: "Drops Lab",
+      description: "Telegram channel for aidrops",
+      url: "https://t.me/+YNhB-0fmIJsxYjVi"
     },
     {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
+      title: "Du Rove's channel",
+      description: "Telegram CEO",
+      url: "https://t.me/durov",
     },
     {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
+      title: "Alex Falcon",
+      description: "Founder of X Empire",
+      url: "https://t.me/iamalexfalcon",
     },
     {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
+      title: "Crypto With Bhavesh(Hindi)",
+      description: "Telegram channel for crypto airdrops in hindi",
+      url: "https://t.me/cryptowithbhavesh",
     },
     {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
+      title: "Notcoin community",
+      description: "Official channel of Notcoin",
+      url: "https://t.me/notcoin",
     },
     {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
+      title: "Bitget Wallet Announcement",
+      description: "Announcements of launchpool,projects,etc",
+      url: "https://t.me/Bitget_Wallet_Announcement",
     },
     {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
+      title: "NOT pixel channel",
+      description: "Announcements of Notcoin",
+      url: "https://t.me/notpixel_channel",
+    }
   ];
   return (
     <div>
