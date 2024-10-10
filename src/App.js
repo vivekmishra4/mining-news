@@ -4,11 +4,7 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 import { CgAddR } from "react-icons/cg";
 // Function to get the user ID from URL parameters
-function getUserId() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const user = JSON.parse(urlParams.get('user')); // Extract the user JSON
-  return user.id; // Return the user ID
-}
+
 
 function App() {
   const isAdmin = true;
@@ -25,8 +21,10 @@ function App() {
     // const userId = initDataUnsafe.user.id;
 
     // console.log("User ID:", userId);
-    const userId = getUserId();
-    alert(userId);
+    // const urlParams = new URLSearchParams(window.location.search);
+    // const user = JSON.parse(urlParams.get("user")); // Extract the user JSON
+    // const userId = user.id;
+    // alert(userId);
   }, [currentPage]);
   return (
     <div className="app">
