@@ -9,7 +9,7 @@ function Game({index,title,monthlyUsers,link,description}) {
         <span>{title}</span>
         <span>{monthlyUsers} monthly users</span>
       </div>
-      <div className="text-center">{description}</div>
+      <div className="text-center">{description!=="NA"&&description}</div>
       <a
         className="block w-fit px-2 py-0 bg-red-500 border"
         style={{ margin: "0 auto" }}

@@ -1,9 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 function Token({ item }) {
-  const { network, coin, open, high, low, last,tag } = item;
-  let changePrice = open - last;
-  let changePercent = Math.round((changePrice / open) * 100);
+  const { name, coin, open, high, low, changePrice,changePercent,tag } = item;
   let navigate = useNavigate();
   return (
     <div
@@ -11,7 +9,7 @@ function Token({ item }) {
         navigate("/tokens/" + coin);
       }}
       key={coin}
-      className="border p-3 border-gray-500 m-3 my-item"
+      className="border p-3 border-gray-500 mb-3 my-item"
       style={{
         boxShadow: "1px 3px 1px 3px rgb(0 0 0 / 20%)",
         cursor: "pointer",
@@ -19,16 +17,15 @@ function Token({ item }) {
     >
       <div>
         <span style={{ float: "left", paddingRight: "5px" }}>{coin}</span>
-        <span>({network})</span>
+        <span>({name})</span>
         <span className="m-5 text-red-600">{tag!=="NA"&&tag}</span>
-        <span style={{ float: "right" }}>{open}</span>
+        <span style={{ float: "right" }}>price: {open}$</span>
       </div>
       <span style={{ whiteSpace: "pre" }}>
         high:{high} low:{low}
       </span>
       <span style={{ float: "right" }}>
-        {changePrice >= 0 && "+"}
-        {changePrice + "(" + changePercent + "%)"}
+        {changePercent + "% ( " + changePrice + "$)"}
       </span>
     </div>
   );

@@ -4,13 +4,14 @@ import Code from "../components/Code/Code";
 function Codes() {
   const { currentPage, setCurrentPage } = useOutletContext();
   setCurrentPage("Codes");
-  const gamesList = [{ title: "Hamster Kombat", url: "https://google.com",image:"logo.png" },
-    { title: "Tomarket", url: "https://google.com",image:"logo.png" },
-    { title: "Memefi", url: "https://google.com",image:"logo.png" },
-    { title: "Tapswap", url: "https://google.com",image:"logo.png" },
-    { title: "Blum", url: "https://google.com",image:"logo.png" },
-    { title: "X empire", url: "https://google.com",image:"logo.png" },
-    { title: "Major", url: "https://google.com",image:"logo.png" }
+  const gamesList = [
+    { title: "Tomarket", url: "https://t.me/TomarkettCombo",image:"tomarket.jpg" },
+    { title: "Memefi", url: "https://t.me/memefidailycodes",image:"memefi.jpg" },
+    { title: "Tapswap", url: "https://t.me/tapswapcode6",image:"tapswap.jpg" },
+    { title: "Blum", url: "https://t.me/Blum_Codes_Daily_Combo",image:"blum.jpg" },
+    { title: "X empire", url: "https://t.me/Daily_Combo_X_Empire_Combo",image:"x empire.jpg" },
+    { title: "Major", url: "https://t.me/Major_Combo_Daily_Puzzle",image:"major.jpg" },
+    { title: "Hamster Kombat", url: "https://t.me/dailycombo_0",image:"hamster kombat.jpg" },
   ];
   return (
     <div>

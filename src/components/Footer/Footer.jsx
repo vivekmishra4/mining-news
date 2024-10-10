@@ -12,11 +12,11 @@ function Footer({currentPage}) {
   const [selected, setSelected] = useState("Bots");
   return (
     <div className="footer bg-cyan-500">
-        <Item to="/tokens" title="Tokens" image={<ImCoinDollar size="60%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
-        <Item to="/news" title="News" image={<BiMessageDetail size="60%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
-        <Item to="/" title="Bots" image={<BiPlayCircle size="60%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
-        <Item to="/codes" title="Codes" image={<GrKey size="60%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
-        <Item to="/channels" title="Channels" image={<TbBrandTelegram size="60%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
+        <Item to="/tokens" title="Tokens" image={<ImCoinDollar size="45%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
+        <Item to="/news" title="News" image={<BiMessageDetail size="45%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
+        <Item to="/" title="Bots" image={<BiPlayCircle size="45%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
+        <Item to="/codes" title="Codes" image={<GrKey size="45%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
+        <Item to="/channels" title="Channels" image={<TbBrandTelegram size="45%" style={{display:"block",margin:"auto"}}/>} currentPage={currentPage}/>
     </div>
   )
 }

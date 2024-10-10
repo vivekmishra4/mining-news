@@ -9,55 +9,10 @@ function News() {
       url: "https://t.me/Cats_housewtf/147",
     },
     {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
-    {
-      title: "Hamster kombat",
-      description: "Airdrop on 26th september",
-      url: "https://www.google.com",
-    },
+      title:"Cats Airdrop",
+      description:"Cats token generation event on 08-10-24",
+      url:"https://t.me/Cats_housewtf/164"
+    }
   ];
   const { currentPage, setCurrentPage } = useOutletContext();
   setCurrentPage("News");

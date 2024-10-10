@@ -10,7 +10,7 @@
     min-width: 20vw;
     padding:auto 5%;
     box-sizing: border-box;
-    border-right: 2px red solid;
+    border-right: 2px rgb(42, 40, 40) solid;
     height: 100%;
     
 }

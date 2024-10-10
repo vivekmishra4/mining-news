@@ -3,46 +3,54 @@ import { Link, Outlet, useNavigate, useNavigation } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import { CgAddR } from "react-icons/cg";
-import { GrCheckmark } from "react-icons/gr";
+// Function to get the user ID from URL parameters
+function getUserId() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const user = JSON.parse(urlParams.get('user')); // Extract the user JSON
+  return user.id; // Return the user ID
+}
+
 function App() {
   const isAdmin = true;
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigation();
   const [currentPage, setCurrentPage] = useState("games");
-  useEffect(() => {}, [currentPage]);
+  useEffect(() => {
+    // Access the Telegram Web App user data
+    // const initData = window.Telegram.WebApp.initData;
+    // const initDataUnsafe = window.Telegram.WebApp.initDataUnsafe;
+
+    // // Access the user_id from initDataUnsafe
+    // const userId = initDataUnsafe.user.id;
+
+    // console.log("User ID:", userId);
+    const userId = getUserId();
+    alert(userId);
+  }, [currentPage]);
   return (
     <div className="app">
-     {currentPage!=="NA"&&<header
-        className="fixed top-0 w-full text-white px-4"
-        style={{
-          display: "flex",
-          height: "8%",
-          justifyContent: "space-between",
-        }}
-      >
-        {/* <h1
+      {currentPage !== "NA" && (
+        <header className="fixed top-0 w-full text-white px-4">
+          {/* <h1
           className="text-2xl font-bold"
           style={{ alignSelf: "center", height: "80%" }}
         >
           Mininig News
         </h1> */}
 
-        
-        {isAdmin && (
-          <Link to={"/approve/" + currentPage} className="text-red-500 rounded">
-            <GrCheckmark />
-          </Link>
-        )}
-        <Link
-          className="text-red-500"
-          to={"/add/" + currentPage}
-          title="Add Item"
-        >
-          
-          <CgAddR className="inline mr-1"/>
-        </Link>
-      </header>}
+          {isAdmin && (
+            <Link
+              className="text-red-500"
+              to={"/add/" + currentPage}
+              title="Add Item"
+              style={{ float: "right" }}
+            >
+              <CgAddR className="inline mr-1" size="30px" />
+            </Link>
+          )}
+        </header>
+      )}
       <main
         className="py-3 px-2 bg-black"
         style={{ height: "82%", marginBottom: "10%" }}

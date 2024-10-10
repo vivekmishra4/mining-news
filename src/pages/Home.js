@@ -104,12 +104,6 @@ function Home() {
       monthlyUsers:27167663,
       description:"NA",
       link:"https://t.me/dogshouse_bot/join?startapp=6hrZbbfUQhKteZDLh7LEHQ"
-    },
-    {
-      title:"WeMine",
-      monthlyUsers:146234,
-      description:"NA",
-      link:"https://t.me/WeMineBot/mine?startapp=ref_CKTKD8XEH4"
     }
   ];
   gameList.sort((a, b) => {

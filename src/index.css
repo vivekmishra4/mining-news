@@ -5,7 +5,7 @@
 :root{
   --bg-color:black;
   --color:white;
-  --bg-btn:gray;
+  --bg-btn:rgb(29, 31, 68);
 }
 body {
   background-color:var(--bg-color);
